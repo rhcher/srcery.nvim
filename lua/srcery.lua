@@ -134,7 +134,7 @@ local syntax = {
   Typedef = { fg = z.magenta },
   StorageClass = { fg = z.orange },
   Structure = { fg = z.cyan },
-  Delimiter = { fg = z.bright_black },
+  Delimiter = { fg = z.xgray6 },
 
   Pmenu = { fg = z.bright_white, bg = z.none },
 	PmenuSel = { fg = z.bright_white, bg = z.blue, bold = true },
@@ -148,9 +148,9 @@ local syntax = {
 	DiffText = { fg = z.yellow, bg = z.black },
 
   SpellCap = { fg = z.green, bg = z.none, bold = true, italic = true },
-  SpellBad = { fg = z.none, bg = z.none, undercurl = true },
-	SpellLocal = { fg = z.none, bg = z.none, undercurl = true },
-	SpellRare = { fg = z.none, bg = z.none, undercurl = true },
+  SpellBad = { fg = z.none, bg = z.none, undercurl = true, sp = z.blue },
+	SpellLocal = { fg = z.none, bg = z.none, undercurl = true, sp = z.cyan },
+	SpellRare = { fg = z.none, bg = z.none, undercurl = true, sp = z.magenta },
 
 	Terminal = { fg = z.bright_white, bg = z.hard_black },
 
@@ -194,6 +194,12 @@ local plugin_syntax = {
   IlluminatedWordRead = { link = "LspReferenceRead" },
   IlluminatedWordWrite = { link = "LspReferenceWrite" },
 
+  TelescopeNormal = { fg = z.white, bg = z.none },
+  TelescopeSelection = { fg = z.green, bg = z.none, bold = true },
+  TelescopeMatching = { fg = z.magenta },
+  TelescopeSelectionCaret = { fg = z.magenta },
+  TelescopePromptPrefix = { fg = z.bright_yellow },
+
   ["@Strong"] = { fg = z.none, bg = z.none, bold = true },
   ["@Emphasis"] = { fg = z.none, bg = z.none, bold = true },
   ["@Underline"] = { fg = z.none, bg = z.none, underline = true },
@@ -218,6 +224,146 @@ local plugin_syntax = {
   ["@text.uri"] = { fg = z.green },
   ["@variable"] = { fg = z.bright_white },
   ["@constructor"] = { fg = z.yellow },
+
+  vimCommentTitle = { fg = z.bright_white, bold = true, italic = true },
+  vimNotation = { fg = z.yellow },
+  vimBracket = { fg = z.yellow },
+  vimMapModKey = { fg = z.yellow },
+  vimFuncSID = { fg = z.bright_white },
+  vimSetSep = { fg = z.bright_white },
+  vimSep = { fg = z.bright_white },
+  vimContinue = { fg = z.bright_white },
+
+  schemeParentheses = { fg = z.xgray6 },
+  clojureParen = { fg = z.xgray6 },
+  clojureKeyword = { fg = z.blue },
+  clojureCond = { fg = z.red },
+  clojureSpecial = { fg = z.red },
+  clojureDefine = { fg = z.red },
+
+  clojureFunc = { fg = z.yellow },
+  clojureRepeat = { fg = z.yellow },
+  clojureCharacter = { fg = z.yellow },
+  clojureStringEscape = { fg = z.cyan },
+  clojureException = { fg = z.red },
+
+  clojureRegexp = { fg = z.cyan },
+  clojureRegexpEscape = { fg = z.cyan },
+  clojureRegexpCharClass = { fg = z.bright_white, bg = z.none, bold = true },
+  clojureRegexpMod = { link = "clojureRegexpCharClass" },
+  clojureRegexpQuantifier = { link = "clojureRegexpCharClass" },
+
+  clojureAnonArg = { fg = z.yellow },
+  clojureVariable = { fg = z.blue },
+  clojureMacro = { fg = z.orange, bold = true },
+
+  clojureMeta = { fg = z.yellow },
+  clojureDeref = { fg = z.yellow },
+  clojureQuote = { fg = z.yellow },
+  clojureUnquote = { fg = z.yellow },
+
+  -- C
+  cOperator = { fg = z.magenta },
+  cStructure = { fg = z.red },
+
+  -- Python
+  pythonBuiltin = { fg = z.yellow },
+  pythonBuiltinObj = { fg = z.yellow },
+  pythonBuiltinFunc = { fg = z.yellow },
+  pythonFunction = { fg = z.cyan },
+  pythonDecorator = { fg = z.red },
+  pythonInclude = { fg = z.red },
+  pythonImport = { fg = z.blue },
+  pythonRun = { fg = z.blue },
+  pythonCoding = { fg = z.blue },
+  pythonOperator = { fg = z.red },
+  pythonExceptions= { fg = z.magenta },
+  pythonBoolean = { fg = z.magenta },
+  pythonDot = { fg = z.bright_white },
+
+  -- lua
+  luaIn = { fg = z.red },
+  luaFunction = { fg = z.cyan },
+  luaTable = { fg = z.yellow },
+
+  -- markdown
+  markdownH1 = { fg = z.bright_blue, bold = true },
+  markdownH2 = { fg = z.bright_blue, bold = true },
+  markdownH3 = { fg = z.bright_yellow, bold = true },
+  markdownH4 = { fg = z.bright_yellow, bold = true },
+  markdownH5 = { fg = z.yellow, bold = true },
+  markdownH6 = { fg = z.yellow, bold = true },
+
+  markdownCode = { fg = z.white },
+  markdownCodeBlock = { fg = z.white },
+  markdownCodeDelimiter = { fg = z.white },
+
+  markdownBlockquote = { fg = z.bright_black },
+  markdownListMarker = { fg = z.bright_black },
+  markdownOrderedListMarker = { fg = z.bright_black },
+  markdownRule = { fg = z.bright_black },
+  markdownHeadingRule = { fg = z.bright_black },
+
+  markdownUrlDelimiter = { fg = z.bright_black },
+  markdownLinkDelimiter = { fg = z.bright_black },
+  markdownLinkTextDelimiter = { fg = z.bright_black },
+
+  markdownHeadingDelimiter = { fg = z.bright_black },
+  markdownUrl = { fg = z.bright_green },
+  markdownUrlTitleDelimiter = { fg = z.green },
+
+  markdownLinkText = { fg = z.bright_white, underline = true },
+  markdownIdDeclaration = { link = "markdownLinkText" },
+
+  -- haskell
+  haskellType = { fg = z.blue },
+  haskellIdentifier = { fg = z.orange },
+  haskellSeparator = { fg = z.blue },
+  haskellDelimiter = { fg = z.bright_white },
+  haskellOperators = { fg = z.white },
+
+  haskellBacktick = { fg = z.yellow },
+  haskellStatement = { fg = z.yellow },
+  haskellConditional = { fg = z.yellow },
+
+  haskellLet = { fg = z.cyan },
+  haskellDefault = { fg = z.cyan },
+  haskellWhere = { fg = z.cyan },
+  haskellBottom = { fg = z.cyan },
+  haskellBlockKeywords = { fg = z.cyan },
+  haskellImportKeywords = { fg = z.cyan },
+  haskellDeclKeyword = { fg = z.cyan },
+  haskellDeriving = { fg = z.cyan },
+  haskellAssocType = { fg = z.cyan },
+
+  haskellNumber = { fg = z.magenta },
+  haskellPragma = { fg = z.green },
+  haskellString = { fg = z.green },
+  haskellChar = { fg = z.green },
+
+  -- Json
+  jsonKeyword = { fg = z.green },
+  jsonQuote = { fg = z.green },
+  jsonBraces = { fg = z.blue },
+  jsonString = { fg = z.blue },
+
+  -- rust
+  rustCommentLineDoc = { fg = z.green },
+  rustModPathSep = { fg = z.bright_black },
+
+  -- Make
+  makePreCondit = { fg = z.red },
+  makeCommands = { fg = z.bright_white },
+  makeTarget = { fg = z.yellow },
+
+  -- shell script
+  shParenError = { fg = z.bright_white, bg = z.none },
+  shCmdSubRegion = { fg = z.white },
+  shArithRegion = { fg = z.white },
+  shQuote = { fg = z.white },
+  shRedir = { fg = z.magenta },
+  shOption = { fg = z.bright_yellow },
+  shCommandSub = { fg = z.bright_red },
 
 	-- vimCommentTitle = { fg = z.grey, bold = true },
 	-- vimLet = { fg = z.orange },
