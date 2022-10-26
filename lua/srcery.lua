@@ -95,9 +95,9 @@ local syntax = {
   Folded = { fg = z.bright_black, bg = z.black, italic = true },
   FoldColumn = { fg = z.bright_black, bg = z.black },
   Cursor = { fg = z.black, bg = z.yellow },
-  vCursor = { fg = z.black, bg = z.yellow },
-  iCursor = { fg = z.black, bg = z.yellow },
-  lCursor = { fg = z.black, bg = z.yellow },
+  vCursor = { link = "Cursor" },
+  iCursor = { link = "Cursor" },
+  lCursor = { link = "Cursor" },
 	-- CursorIM = { bg = z.none, reverse = true },
 
   Special = { fg = z.orange },
@@ -190,9 +190,9 @@ local plugin_syntax = {
   LspReferenceRead = { fg = z.bright_white, bg = z.dim_blue, underline = true },
   LspReferenceWrite = { fg = z.bright_white, bg = z.dim_red, underline = true },
 
-  IlluminatedWordText = { fg = z.none, bg = z.xgray5, underline = true },
-  IlluminatedWordRead = { fg = z.bright_white, bg = z.dim_blue, underline = true },
-  IlluminatedWordWrite = { fg = z.bright_white, bg = z.dim_red, underline = true },
+  IlluminatedWordText = { link = "LspReferenceText" },
+  IlluminatedWordRead = { link = "LspReferenceRead" },
+  IlluminatedWordWrite = { link = "LspReferenceWrite" },
 
   ["@Strong"] = { fg = z.none, bg = z.none, bold = true },
   ["@Emphasis"] = { fg = z.none, bg = z.none, bold = true },
