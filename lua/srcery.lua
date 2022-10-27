@@ -36,34 +36,34 @@ local z = {
 }
 
 function z.terminal_color()
-	vim.g.terminal_color_0 = z.black
+  vim.g.terminal_color_0 = z.black
   vim.g.terminal_color_8 = z.bright_black
 
-	vim.g.terminal_color_1 = z.red
+  vim.g.terminal_color_1 = z.red
   vim.g.terminal_color_9 = z.bright_red
 
-	vim.g.terminal_color_2 = z.green
+  vim.g.terminal_color_2 = z.green
   vim.g.terminal_color_10 = z.bright_green
 
-	vim.g.terminal_color_3 = z.yellow
+  vim.g.terminal_color_3 = z.yellow
   vim.g.terminal_color_11 = z.bright_yellow
 
-	vim.g.terminal_color_4 = z.blue
+  vim.g.terminal_color_4 = z.blue
   vim.g.terminal_color_12 = z.bright_blue
 
-	vim.g.terminal_color_5 = z.magenta
+  vim.g.terminal_color_5 = z.magenta
   vim.g.terminal_color_13 = z.bright_magenta
 
-	vim.g.terminal_color_6 = z.cyan
+  vim.g.terminal_color_6 = z.cyan
   vim.g.terminal_color_14 = z.bright_cyan
 
-	vim.g.terminal_color_7 = z.white
-	vim.g.terminal_color_15 = z.bright_white
+  vim.g.terminal_color_7 = z.white
+  vim.g.terminal_color_15 = z.bright_white
 end
 
 local syntax = {
-	Normal = { fg = z.bright_white, bg = z.none },
-	CursorLine = { bg = z.xgray2 },
+  Normal = { fg = z.bright_white, bg = z.none },
+  CursorLine = { bg = z.xgray2 },
   CursorColumn = { bg = z.xgray2 },
   Tabline = { fg = z.bright_black, bg = z.xgray2 },
   TablineFill = { fg = z.bright_black, bg = z.xgray2 },
@@ -75,12 +75,12 @@ local syntax = {
   NonText = { fg = z.xgray4 },
   SpecialKey = { fg = z.blue },
   Visual = { fg = z.none, bg = z.xgray5 },
-	VisualNOS = { fg = z.none, bg = z.xgray5 },
+  VisualNOS = { fg = z.none, bg = z.xgray5 },
   Search = { fg = z.none, bg = z.xgray5, bold = true },
   IncSearch = { fg = z.none, bg = z.xgray5, underline = true, bold = true },
   Underlined = { fg = z.blue, bg = z.none, underline = true },
   StatusLine = { fg = z.bright_white, bg = z.xgray2 },
-	StatusLineNC = { fg = z.bright_black, bg = z.black, underline = true },
+  StatusLineNC = { fg = z.bright_black, bg = z.black, underline = true },
   VertSplit = { fg = z.bright_white, bg = z.black },
   WildMenu = { fg = z.blue, bg = z.black, bold = true },
   Directory = { fg = z.green, bg = z.none, bold = true },
@@ -98,7 +98,7 @@ local syntax = {
   vCursor = { link = "Cursor" },
   iCursor = { link = "Cursor" },
   lCursor = { link = "Cursor" },
-	-- CursorIM = { bg = z.none, reverse = true },
+  -- CursorIM = { bg = z.none, reverse = true },
 
   Special = { fg = z.orange },
   SpecialChar = { fg = z.yellow },
@@ -137,39 +137,39 @@ local syntax = {
   Delimiter = { fg = z.xgray6 },
 
   Pmenu = { fg = z.bright_white, bg = z.none },
-	PmenuSel = { fg = z.bright_white, bg = z.blue, bold = true },
-	PmenuSelBold = { fg = z.base0, bg = z.blue },
-	PmenuSbar = { fg = z.none,  bg = z.xgray1 },
-	PmenuThumb = { fg = z.none, bg = z.xgray6 },
+  PmenuSel = { fg = z.bright_white, bg = z.blue, bold = true },
+  PmenuSelBold = { fg = z.base0, bg = z.blue },
+  PmenuSbar = { fg = z.none, bg = z.xgray1 },
+  PmenuThumb = { fg = z.none, bg = z.xgray6 },
 
   DiffDelete = { fg = z.red, bg = z.black },
   DiffAdd = { fg = z.green, bg = z.black },
-	DiffChange = { fg = z.cyan, bg = z.black },
-	DiffText = { fg = z.yellow, bg = z.black },
+  DiffChange = { fg = z.cyan, bg = z.black },
+  DiffText = { fg = z.yellow, bg = z.black },
 
   SpellCap = { fg = z.green, bg = z.none, bold = true, italic = true },
   SpellBad = { fg = z.none, bg = z.none, undercurl = true, sp = z.blue },
-	SpellLocal = { fg = z.none, bg = z.none, undercurl = true, sp = z.cyan },
-	SpellRare = { fg = z.none, bg = z.none, undercurl = true, sp = z.magenta },
+  SpellLocal = { fg = z.none, bg = z.none, undercurl = true, sp = z.cyan },
+  SpellRare = { fg = z.none, bg = z.none, undercurl = true, sp = z.magenta },
 
-	Terminal = { fg = z.bright_white, bg = z.hard_black },
+  Terminal = { fg = z.bright_white, bg = z.hard_black },
 
-	-- EndOfBuffer = { fg = z.bg, bg = z.none },
-	-- Whitespace = { fg = z.base4 },
-	-- NormalFloat = { fg = z.base8, bg = z.bg_highlight },
-	-- QuickFixLine = { fg = z.violet, bold = true },
-	-- Debug = { fg = z.orange },
-	-- debugBreakpoint = { fg = z.bg, bg = z.red },
-	--
-	-- Tag = { fg = z.orange },
-	--
-	-- Ignore = { fg = z.grey },
-	--
-	-- DashboardShortCut = { fg = z.magenta },
-	-- DashboardHeader = { fg = z.orange },
-	-- DashboardCenter = { fg = z.teal },
-	-- DashboardCenterIcon = { fg = z.blue },
-	-- DashboardFooter = { fg = z.yellow, bold = true },
+  -- EndOfBuffer = { fg = z.bg, bg = z.none },
+  -- Whitespace = { fg = z.base4 },
+  -- NormalFloat = { fg = z.base8, bg = z.bg_highlight },
+  -- QuickFixLine = { fg = z.violet, bold = true },
+  -- Debug = { fg = z.orange },
+  -- debugBreakpoint = { fg = z.bg, bg = z.red },
+  --
+  -- Tag = { fg = z.orange },
+  --
+  -- Ignore = { fg = z.grey },
+  --
+  -- DashboardShortCut = { fg = z.magenta },
+  -- DashboardHeader = { fg = z.orange },
+  -- DashboardCenter = { fg = z.teal },
+  -- DashboardCenterIcon = { fg = z.blue },
+  -- DashboardFooter = { fg = z.yellow, bold = true },
 }
 
 local plugin_syntax = {
@@ -200,30 +200,30 @@ local plugin_syntax = {
   TelescopeSelectionCaret = { fg = z.magenta },
   TelescopePromptPrefix = { fg = z.bright_yellow },
 
-  ["@Strong"] = { fg = z.none, bg = z.none, bold = true },
-  ["@Emphasis"] = { fg = z.none, bg = z.none, bold = true },
-  ["@Underline"] = { fg = z.none, bg = z.none, underline = true },
-  ["@Warning"]  = { fg = z.orange, bg = z.none, bold = true },
-  ["@Danger"] = { fg = z.red, bg = z.none, bold = true },
-  ["@constant.builtin"] = { fg = z.cyan },
-  ["@field"] = { fg = z.green, bg = z.none },
+  ["@Strong"]                = { fg = z.none, bg = z.none, bold = true },
+  ["@Emphasis"]              = { fg = z.none, bg = z.none, bold = true },
+  ["@Underline"]             = { fg = z.none, bg = z.none, underline = true },
+  ["@Warning"]               = { fg = z.orange, bg = z.none, bold = true },
+  ["@Danger"]                = { fg = z.red, bg = z.none, bold = true },
+  ["@constant.builtin"]      = { fg = z.cyan },
+  ["@field"]                 = { fg = z.green, bg = z.none },
   -- ["@function.builtin"] = { fg = z.yellow },
-  ["@function.macro"] = { fg = z.orange },
-  ["@function"] = { fg = z.yellow },
-  ["@method"] = { fg = z.yellow },
-  ["@constant"] = { fg = z.cyan },
-  ["@namespace"] = { fg = z.white, bg = z.none, italic = true },
-  ["@parameter"] = { fg = z.cyan, bg = z.none, italic = true },
-  ["@property"] = { fg = z.bright_blue },
-  ["@symbol"] = { fg = z.blue },
-  ["@tag"] = { fg = z.blue },
-  ["@tag.attribute"] = { fg = z.yellow },
-  ["@variable.builtin"] = { fg = z.cyan },
-  ["@type"] = { fg = z.white },
+  ["@function.macro"]        = { fg = z.orange },
+  ["@function"]              = { fg = z.yellow },
+  ["@method"]                = { fg = z.yellow },
+  ["@constant"]              = { fg = z.cyan },
+  ["@namespace"]             = { fg = z.white, bg = z.none, italic = true },
+  ["@parameter"]             = { fg = z.cyan, bg = z.none, italic = true },
+  ["@property"]              = { fg = z.bright_blue },
+  ["@symbol"]                = { fg = z.blue },
+  ["@tag"]                   = { fg = z.blue },
+  ["@tag.attribute"]         = { fg = z.yellow },
+  ["@variable.builtin"]      = { fg = z.cyan },
+  ["@type"]                  = { fg = z.white },
   ["@punctuation.delimiter"] = { fg = z.white },
-  ["@text.uri"] = { fg = z.green },
-  ["@variable"] = { fg = z.bright_white },
-  ["@constructor"] = { fg = z.yellow },
+  ["@text.uri"]              = { fg = z.green },
+  ["@variable"]              = { fg = z.bright_white },
+  ["@constructor"]           = { fg = z.yellow },
 
   vimCommentTitle = { fg = z.bright_white, bold = true, italic = true },
   vimNotation = { fg = z.yellow },
@@ -277,7 +277,7 @@ local plugin_syntax = {
   pythonRun = { fg = z.blue },
   pythonCoding = { fg = z.blue },
   pythonOperator = { fg = z.red },
-  pythonExceptions= { fg = z.magenta },
+  pythonExceptions = { fg = z.magenta },
   pythonBoolean = { fg = z.magenta },
   pythonDot = { fg = z.bright_white },
 
@@ -365,116 +365,116 @@ local plugin_syntax = {
   shOption = { fg = z.bright_yellow },
   shCommandSub = { fg = z.bright_red },
 
-	-- vimCommentTitle = { fg = z.grey, bold = true },
-	-- vimLet = { fg = z.orange },
-	-- vimVar = { fg = z.cyan },
-	-- vimFunction = { fg = z.redwine },
-	-- vimIsCommand = { fg = z.fg },
-	-- vimCommand = { fg = z.blue },
-	-- vimNotFunc = { fg = z.violet, bold = true },
-	-- vimUserFunc = { fg = z.yellow, bold = true },
-	-- vimFuncName = { fg = z.yellow, bold = true },
+  -- vimCommentTitle = { fg = z.grey, bold = true },
+  -- vimLet = { fg = z.orange },
+  -- vimVar = { fg = z.cyan },
+  -- vimFunction = { fg = z.redwine },
+  -- vimIsCommand = { fg = z.fg },
+  -- vimCommand = { fg = z.blue },
+  -- vimNotFunc = { fg = z.violet, bold = true },
+  -- vimUserFunc = { fg = z.yellow, bold = true },
+  -- vimFuncName = { fg = z.yellow, bold = true },
 
-	diffAdded = { fg = z.green },
-	diffRemoved = { fg = z.red },
-	diffChanged = { fg = z.cyan },
-	-- diffOldFile = { fg = z.orange },
-	diffNewFile = { fg = z.yellow },
-	diffFile = { fg = z.orange },
-	diffLine = { fg = z.blue },
-	-- diffIndexLine = { fg = z.violet },
+  diffAdded = { fg = z.green },
+  diffRemoved = { fg = z.red },
+  diffChanged = { fg = z.cyan },
+  -- diffOldFile = { fg = z.orange },
+  diffNewFile = { fg = z.yellow },
+  diffFile = { fg = z.orange },
+  diffLine = { fg = z.blue },
+  -- diffIndexLine = { fg = z.violet },
 
-	-- gitcommitSummary = { fg = z.red },
-	-- gitcommitUntracked = { fg = z.grey },
-	-- gitcommitDiscarded = { fg = z.grey },
-	-- gitcommitSelected = { fg = z.grey },
-	-- gitcommitUnmerged = { fg = z.grey },
-	-- gitcommitOnBranch = { fg = z.grey },
-	-- gitcommitArrow = { fg = z.grey },
-	-- gitcommitFile = { fg = z.dark_green },
+  -- gitcommitSummary = { fg = z.red },
+  -- gitcommitUntracked = { fg = z.grey },
+  -- gitcommitDiscarded = { fg = z.grey },
+  -- gitcommitSelected = { fg = z.grey },
+  -- gitcommitUnmerged = { fg = z.grey },
+  -- gitcommitOnBranch = { fg = z.grey },
+  -- gitcommitArrow = { fg = z.grey },
+  -- gitcommitFile = { fg = z.dark_green },
 
-	-- VistaBracket = { fg = z.grey },
-	-- VistaChildrenNr = { fg = z.orange },
-	-- VistaKind = { fg = z.violet },
-	-- VistaScope = { fg = z.red },
-	-- VistaScopeKind = { fg = z.blue },
-	-- VistaTag = { fg = z.magenta, bold = true },
-	-- VistaPrefix = { fg = z.grey },
-	-- VistaColon = { fg = z.magenta },
-	-- VistaIcon = { fg = z.yellow },
-	-- VistaLineNr = { fg = z.fg },
+  -- VistaBracket = { fg = z.grey },
+  -- VistaChildrenNr = { fg = z.orange },
+  -- VistaKind = { fg = z.violet },
+  -- VistaScope = { fg = z.red },
+  -- VistaScopeKind = { fg = z.blue },
+  -- VistaTag = { fg = z.magenta, bold = true },
+  -- VistaPrefix = { fg = z.grey },
+  -- VistaColon = { fg = z.magenta },
+  -- VistaIcon = { fg = z.yellow },
+  -- VistaLineNr = { fg = z.fg },
 
-	-- GitGutterAdd = { fg = z.dark_green },
-	-- GitGutterChange = { fg = z.blue },
-	-- GitGutterDelete = { fg = z.red },
-	-- GitGutterChangeDelete = { fg = z.violet },
+  -- GitGutterAdd = { fg = z.dark_green },
+  -- GitGutterChange = { fg = z.blue },
+  -- GitGutterDelete = { fg = z.red },
+  -- GitGutterChangeDelete = { fg = z.violet },
 
-	-- GitSignsAdd = { fg = z.dark_green },
-	-- GitSignsChange = { fg = z.blue },
-	-- GitSignsDelete = { fg = z.red },
-	-- GitSignsAddNr = { fg = z.dark_green },
-	-- GitSignsChangeNr = { fg = z.blue },
-	-- GitSignsDeleteNr = { fg = z.red },
-	-- GitSignsAddLn = { bg = z.bg_popup },
-	-- GitSignsChangeLn = { bg = z.bg_highlight },
-	-- GitSignsDeleteLn = { bg = z.bg1 },
+  -- GitSignsAdd = { fg = z.dark_green },
+  -- GitSignsChange = { fg = z.blue },
+  -- GitSignsDelete = { fg = z.red },
+  -- GitSignsAddNr = { fg = z.dark_green },
+  -- GitSignsChangeNr = { fg = z.blue },
+  -- GitSignsDeleteNr = { fg = z.red },
+  -- GitSignsAddLn = { bg = z.bg_popup },
+  -- GitSignsChangeLn = { bg = z.bg_highlight },
+  -- GitSignsDeleteLn = { bg = z.bg1 },
 
-	-- SignifySignAdd = { fg = z.dark_green },
-	-- SignifySignChange = { fg = z.blue },
-	-- SignifySignDelete = { fg = z.red },
+  -- SignifySignAdd = { fg = z.dark_green },
+  -- SignifySignChange = { fg = z.blue },
+  -- SignifySignDelete = { fg = z.red },
 
-	-- dbui_tables = { fg = z.blue },
+  -- dbui_tables = { fg = z.blue },
 
-	-- CursorWord = { bg = z.base4, underline = true },
+  -- CursorWord = { bg = z.base4, underline = true },
 
-	-- NvimTreeFolderName = { fg = z.blue },
-	-- NvimTreeRootFolder = { fg = z.red, bold = true },
-	-- NvimTreeSpecialFile = { fg = z.fg, bg = z.none },
-	-- NvimTreeGitDirty = { fg = z.redwine },
+  -- NvimTreeFolderName = { fg = z.blue },
+  -- NvimTreeRootFolder = { fg = z.red, bold = true },
+  -- NvimTreeSpecialFile = { fg = z.fg, bg = z.none },
+  -- NvimTreeGitDirty = { fg = z.redwine },
 
-	-- TelescopeBorder = { fg = z.teal },
-	-- TelescopePromptBorder = { fg = z.blue },
-	-- TelescopeMatching = { fg = z.teal },
-	-- TelescopeSelection = { fg = z.yellow, bg = z.bg_highlight, bold = true },
-	-- TelescopeSelectionCaret = { fg = z.yellow },
-	-- TelescopeMultiSelection = { fg = z.teal },
+  -- TelescopeBorder = { fg = z.teal },
+  -- TelescopePromptBorder = { fg = z.blue },
+  -- TelescopeMatching = { fg = z.teal },
+  -- TelescopeSelection = { fg = z.yellow, bg = z.bg_highlight, bold = true },
+  -- TelescopeSelectionCaret = { fg = z.yellow },
+  -- TelescopeMultiSelection = { fg = z.teal },
 
-	-- -- nvim v0.6.0+
-	-- DiagnosticSignError = { fg = z.red },
-	-- DiagnosticSignWarn = { fg = z.yellow },
-	-- DiagnosticSignInfo = { fg = z.blue },
-	-- DiagnosticSignHint = { fg = z.cyan },
+  -- -- nvim v0.6.0+
+  -- DiagnosticSignError = { fg = z.red },
+  -- DiagnosticSignWarn = { fg = z.yellow },
+  -- DiagnosticSignInfo = { fg = z.blue },
+  -- DiagnosticSignHint = { fg = z.cyan },
 
-	-- DiagnosticError = { fg = z.red },
-	-- DiagnosticWarn = { fg = z.yellow },
-	-- DiagnosticInfo = { fg = z.blue },
-	-- DiagnosticHint = { fg = z.cyan },
+  -- DiagnosticError = { fg = z.red },
+  -- DiagnosticWarn = { fg = z.yellow },
+  -- DiagnosticInfo = { fg = z.blue },
+  -- DiagnosticHint = { fg = z.cyan },
 
-	-- DiagnosticVirtualTextError = { fg = z.red },
-	-- DiagnosticVirtualTextWarn = { fg = z.yellow },
-	-- DiagnosticVirtualTextInfo = { fg = z.blue },
-	-- DiagnosticVirtualTextHint = { fg = z.cyan },
+  -- DiagnosticVirtualTextError = { fg = z.red },
+  -- DiagnosticVirtualTextWarn = { fg = z.yellow },
+  -- DiagnosticVirtualTextInfo = { fg = z.blue },
+  -- DiagnosticVirtualTextHint = { fg = z.cyan },
 
-	-- DiagnosticUnderlineError = { undercurl = true, sp = z.red },
-	-- DiagnosticUnderlineWarn = { undercurl = true, sp = z.yellow },
-	-- DiagnosticUnderlineInfo = { undercurl = true, sp = z.blue },
-	-- DiagnosticUnderlineHint = { undercurl = true, sp = z.cyan },
+  -- DiagnosticUnderlineError = { undercurl = true, sp = z.red },
+  -- DiagnosticUnderlineWarn = { undercurl = true, sp = z.yellow },
+  -- DiagnosticUnderlineInfo = { undercurl = true, sp = z.blue },
+  -- DiagnosticUnderlineHint = { undercurl = true, sp = z.cyan },
 
-	-- nvim-cmp
-	CmpItemAbbr = { fg = z.bright_black },
+  -- nvim-cmp
+  CmpItemAbbr = { fg = z.bright_black },
   CmpItemAbbrDeprecated = { fg = z.bright_black, bg = z.none, strikethrough = true },
-	CmpItemAbbrMatch = { fg = z.bright_white },
-	CmpItemMenu = { fg = z.white },
+  CmpItemAbbrMatch = { fg = z.bright_white },
+  CmpItemMenu = { fg = z.white },
   CmpItemKind = { fg = z.yellow },
   CmpItemAbbrMatchFuzzy = { fg = z.bright_green },
-	-- CmpItemKindVariable = { fg = z.blue },
-	-- CmpItemKindFiled = { fg = z.magenta },
-	-- CmpItemKindFunction = { fg = z.yellow },
-	-- CmpItemKindClass = { fg = z.orange },
-	-- CmpItemKindMethod = { fg = z.teal },
-	-- CmpItemKindKeyWord = { fg = z.red },
-	-- CmpItemKindText = { fg = z.light_green },
-	-- CmpItemKindModule = { fg = z.cyan },
+  -- CmpItemKindVariable = { fg = z.blue },
+  -- CmpItemKindFiled = { fg = z.magenta },
+  -- CmpItemKindFunction = { fg = z.yellow },
+  -- CmpItemKindClass = { fg = z.orange },
+  -- CmpItemKindMethod = { fg = z.teal },
+  -- CmpItemKindKeyWord = { fg = z.red },
+  -- CmpItemKindText = { fg = z.light_green },
+  -- CmpItemKindModule = { fg = z.cyan },
 
   MatchWord = { fg = z.none, bg = z.none },
   LspCxxHlGroupMemberVariable = { fg = z.bright_white, bg = z.none },
@@ -483,36 +483,36 @@ local plugin_syntax = {
 
   ExtraWhitespace = { fg = z.none, bg = z.red },
 
-	-- Neogit
-	-- NeogitDiffAddHighlight = { fg = z.green },
-	-- NeogitDiffDeleteHighlight = { fg = z.red },
-	-- NeogitDiffContextHighlight = { fg = z.blue },
-	-- NeogitHunkHeader = { fg = z.fg },
-	-- NeogitHunkHeaderHighlight = { fg = z.redwine },
+  -- Neogit
+  -- NeogitDiffAddHighlight = { fg = z.green },
+  -- NeogitDiffDeleteHighlight = { fg = z.red },
+  -- NeogitDiffContextHighlight = { fg = z.blue },
+  -- NeogitHunkHeader = { fg = z.fg },
+  -- NeogitHunkHeaderHighlight = { fg = z.redwine },
 }
 
 local async_load_plugin
 
 local set_hl = function(tbl)
-	for group, conf in pairs(tbl) do
-		vim.api.nvim_set_hl(0, group, conf)
-	end
+  for group, conf in pairs(tbl) do
+    vim.api.nvim_set_hl(0, group, conf)
+  end
 end
 
 async_load_plugin = vim.loop.new_async(vim.schedule_wrap(function()
-	z.terminal_color()
-	set_hl(plugin_syntax)
-	async_load_plugin:close()
+  z.terminal_color()
+  set_hl(plugin_syntax)
+  async_load_plugin:close()
 end))
 
 function z.colorscheme()
-	vim.api.nvim_command("hi clear")
+  vim.api.nvim_command("hi clear")
 
-	vim.o.background = "dark"
-	vim.o.termguicolors = true
-	vim.g.colors_name = "srcery"
-	set_hl(syntax)
-	async_load_plugin:send()
+  vim.o.background = "dark"
+  vim.o.termguicolors = true
+  vim.g.colors_name = "srcery"
+  set_hl(syntax)
+  async_load_plugin:send()
 end
 
 z.colorscheme()
