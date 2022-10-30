@@ -483,6 +483,32 @@ local plugin_syntax = {
 
   ExtraWhitespace = { fg = z.none, bg = z.red },
 
+  LspNamespace = { fg = "#BBBB00" },
+  LspType = { link = "Type" },
+  LspClass = { link = "Type" },
+  LspEnum = { link = "Type" },
+  LspInterface = { link = "Type" },
+  LspStruct = { link = "Type" },
+  LspTypeParameter = { link = "Type" },
+
+  LspVariable = { link = "LspCxxHlSymVariable" },
+  LspEnumMember = { fg = "#AD7FA8" },
+  LspMacro = { link = "Macro" },
+  LspKeyword = { link = "Keyword" },
+  LspComment = { link = "Comment" },
+  LspString = { link = "String" },
+  LspNumber = { link = "Number" },
+  LspOperator = { link = "Operator" },
+
+  LspFunction = { link = "Function" },
+  LspMethod = { link = "Function" },
+
+  LspParameter = { link = "LspCxxHlSymParameter" },
+  LspRegexp = { link = "clojureRegexp" },
+  LspStatic = { link = "Normal" },
+  -- LspReadonly = { link = "Constant" },
+  LspDeprecated = { strikethrough = true },
+
   -- Neogit
   -- NeogitDiffAddHighlight = { fg = z.green },
   -- NeogitDiffDeleteHighlight = { fg = z.red },
