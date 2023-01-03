@@ -212,18 +212,20 @@ local plugin_syntax = {
   ["@function"]              = { fg = z.yellow },
   ["@method"]                = { fg = z.yellow },
   ["@constant"]              = { fg = z.cyan },
-  ["@namespace"]             = { fg = z.white, bg = z.none, italic = true },
-  ["@parameter"]             = { fg = z.cyan, bg = z.none, italic = true },
+  ["@namespace"]             = { fg = "#BBBB00", bg = z.none, italic = true },
+  ["@parameter"]             = { fg = z.cyan, bg = z.none },
   ["@property"]              = { fg = z.bright_blue },
   ["@symbol"]                = { fg = z.blue },
   ["@tag"]                   = { fg = z.blue },
   ["@tag.attribute"]         = { fg = z.yellow },
   ["@variable.builtin"]      = { fg = z.cyan },
-  ["@type"]                  = { fg = z.white },
+  ["@type"]                  = { link = "Type" },
   ["@punctuation.delimiter"] = { fg = z.white },
   ["@text.uri"]              = { fg = z.green },
-  ["@variable"]              = { fg = z.bright_white },
+  ["@variable"]              = { fg = z.white },
   ["@constructor"]           = { fg = z.yellow },
+  ["@class"]                 = { link = "Type" },
+  ["@struct"]                = { link = "Type" },
 
   vimCommentTitle = { fg = z.bright_white, bold = true, italic = true },
   vimNotation = { fg = z.yellow },
@@ -477,11 +479,11 @@ local plugin_syntax = {
   -- CmpItemKindModule = { fg = z.cyan },
 
   MatchWord = { fg = z.none, bg = z.none },
-  LspCxxHlGroupMemberVariable = { fg = z.bright_white, bg = z.none },
+  LspCxxHlGroupMemberVariable = { fg = z.bright_white },
   LspCxxHlSymVariable = { fg = z.white },
   LspCxxHlSymParameter = { fg = z.white },
 
-  ExtraWhitespace = { fg = z.none, bg = z.red },
+  ExtraWhitespace = { bg = z.red },
 
   LspNamespace = { fg = "#BBBB00" },
   LspType = { link = "Type" },
@@ -499,14 +501,15 @@ local plugin_syntax = {
   LspString = { link = "String" },
   LspNumber = { link = "Number" },
   LspOperator = { link = "Operator" },
+  LspProperty = { link = "LspCxxHlGroupMemberVariable" },
+  LspVariableReadOnly = { link = "Constant" },
 
   LspFunction = { link = "Function" },
   LspMethod = { link = "Function" },
 
-  LspParameter = { link = "LspCxxHlSymParameter" },
+  LspParameter = { link = "Identifier" },
   LspRegexp = { link = "clojureRegexp" },
   LspStatic = { link = "Normal" },
-  -- LspReadonly = { link = "Constant" },
   LspDeprecated = { strikethrough = true },
 
   -- Neogit
