@@ -285,7 +285,7 @@ local plugin_syntax = {
 
   -- lua
   luaIn = { fg = z.red },
-  luaFunction = { fg = z.cyan },
+  luaFunction = { fg = z.red },
   luaTable = { fg = z.yellow },
 
   -- markdown
