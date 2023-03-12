@@ -533,19 +533,11 @@ local plugin_syntax = {
   -- NeogitHunkHeaderHighlight = { fg = z.redwine },
 }
 
-local async_load_plugin
-
 local set_hl = function(tbl)
   for group, conf in pairs(tbl) do
     vim.api.nvim_set_hl(0, group, conf)
   end
 end
-
-async_load_plugin = vim.loop.new_async(vim.schedule_wrap(function()
-  z.terminal_color()
-  set_hl(plugin_syntax)
-  async_load_plugin:close()
-end))
 
 function z.colorscheme()
   vim.api.nvim_command("hi clear")
@@ -554,7 +546,8 @@ function z.colorscheme()
   vim.o.termguicolors = true
   vim.g.colors_name = "srcery"
   set_hl(syntax)
-  async_load_plugin:send()
+  z.terminal_color()
+  set_hl(plugin_syntax)
 end
 
 z.colorscheme()
