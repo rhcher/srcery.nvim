@@ -214,7 +214,7 @@ local plugin_syntax = {
   ["@constant"]              = { fg = z.cyan },
   ["@namespace"]             = { fg = "#BBBB00", bg = z.none, italic = true },
   ["@parameter"]             = { fg = z.cyan, bg = z.none },
-  ["@property"]              = { fg = z.bright_blue },
+  ["@property"]              = { fg = z.bright_white },
   ["@symbol"]                = { fg = z.blue },
   ["@tag"]                   = { fg = z.blue },
   ["@tag.attribute"]         = { fg = z.yellow },
@@ -226,6 +226,19 @@ local plugin_syntax = {
   ["@constructor"]           = { fg = z.yellow },
   ["@class"]                 = { link = "Type" },
   ["@struct"]                = { link = "Type" },
+
+  ["@lsp.type.variable"]     = { link = "@variable" },
+  ["@lsp.type.parameter"]     = { link = "@parameter" },
+  ["@lsp.type.property"]     = { link = "@property" },
+  ["@lsp.type.namespace"]     = { link = "@namespace" },
+  ["@lsp.type.class"]     = { link = "@class" },
+
+  ["@lsp.type.property.lua"]     = { fg = z.bright_blue },
+
+  ["@lsp.type.enum.cpp"] = { link = "Type" },
+  ["@lsp.type.enumMember.cpp"] = { fg = "#AD7FA8" },
+  ["@lsp.type.namespace.cpp"] = { fg = "#BBBB00" },
+  ["@lsp.type.comment.cpp"]     = { link = "Comment" },
 
   vimCommentTitle = { fg = z.bright_white, bold = true, italic = true },
   vimNotation = { fg = z.yellow },
