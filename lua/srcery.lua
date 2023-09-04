@@ -492,9 +492,34 @@ local plugin_syntax = {
   -- CmpItemKindModule = { fg = z.cyan },
 
   MatchWord = { fg = z.none, bg = z.none },
+
+  LspCxxHlGroupEnumConstant = { fg = "#AD7FA8" },
+  LspCxxHlGroupNamespace = { fg = "#BBBB00" },
   LspCxxHlGroupMemberVariable = { fg = z.bright_white },
+
+  LspCxxHlSymUnknown = { link = "Normal" },
+
+  -- ccls Type
+  LspCxxHlSymClass = { link = "Type" },
+  LspCxxHlSymStruct = { link = "Type" },
+  LspCxxHlSymEnum = { link = "Type" },
+  LspCxxHlSymTypeAlias = { link = "Type" },
+  LspCxxHlSymTypeParameter = { link = "Type" },
+  -- ccls Function
+  LspCxxHlSymFunction = { link = "Function" },
+  LspCxxHlSymMethod = { link = "Function" },
+  LspCxxHlSymStaticMethod = { link = "Function" },
+  LspCxxHlSymConstructor = { link = "Function" },
+  -- ccls EnumConstant
+  LspCxxHlSymEnumMember = { link = "LspCxxHlGroupEnumConstant" },
+  -- ccls Preprocessor
+  LspCxxHlSymMacro = { link = "Macro" },
+  -- ccls Namespace
+  LspCxxHlSymNamespace = { link = "LspCxxHlGroupNamespace" },
+  -- ccls Variables
   LspCxxHlSymVariable = { fg = z.white },
   LspCxxHlSymParameter = { fg = z.white },
+  LspCxxHlSymField = { link = "LspCxxHlGroupMemberVariable" },
 
   ExtraWhitespace = { bg = z.red },
 
