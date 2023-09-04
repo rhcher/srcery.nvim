@@ -518,7 +518,7 @@ local plugin_syntax = {
   LspCxxHlSymNamespace = { link = "LspCxxHlGroupNamespace" },
   -- ccls Variables
   LspCxxHlSymVariable = { fg = z.white },
-  LspCxxHlSymParameter = { fg = z.white },
+  LspCxxHlSymParameter = { link = "Identifier" },
   LspCxxHlSymField = { link = "LspCxxHlGroupMemberVariable" },
 
   ExtraWhitespace = { bg = z.red },
@@ -532,7 +532,7 @@ local plugin_syntax = {
   LspTypeParameter = { link = "Type" },
 
   LspVariable = { link = "LspCxxHlSymVariable" },
-  LspEnumMember = { fg = "#AD7FA8" },
+  LspEnumMember = { link = "LspCxxHlGroupEnumConstant" },
   LspMacro = { link = "Macro" },
   LspKeyword = { link = "Keyword" },
   LspComment = { link = "Comment" },
