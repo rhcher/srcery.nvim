@@ -144,8 +144,8 @@ local syntax = {
 
   DiffDelete = { fg = z.red, bg = z.black },
   DiffAdd = { fg = z.green, bg = z.black },
-  DiffChange = { fg = z.cyan, bg = z.black },
-  DiffText = { fg = z.yellow, bg = z.black },
+  DiffChange = { fg = z.green, bg = z.black },
+  DiffText = { fg = z.black, bg = z.green },
 
   SpellCap = { fg = z.green, bg = z.none, bold = true, italic = true },
   SpellBad = { fg = z.none, bg = z.none, undercurl = true, sp = z.blue },
