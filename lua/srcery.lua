@@ -154,6 +154,8 @@ local syntax = {
 
   Terminal = { fg = z.bright_white, bg = z.hard_black },
 
+  FloatBorder = { fg = z.yellow },
+
   -- EndOfBuffer = { fg = z.bg, bg = z.none },
   -- Whitespace = { fg = z.base4 },
   -- NormalFloat = { fg = z.base8, bg = z.bg_highlight },
