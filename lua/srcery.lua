@@ -302,6 +302,7 @@ local plugin_syntax = {
   luaIn = { fg = z.red },
   luaFunction = { fg = z.red },
   luaTable = { fg = z.yellow },
+  luaOperator = { fg = z.bright_red },
 
   -- markdown
   markdownH1 = { fg = z.bright_blue, bold = true },
