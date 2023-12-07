@@ -100,6 +100,8 @@ local syntax = {
   lCursor = { link = "Cursor" },
   -- CursorIM = { bg = z.none, reverse = true },
 
+  WinBar = { fg = z.orange},
+
   Special = { fg = z.orange },
   SpecialChar = { fg = z.yellow },
   SpecialComment = { fg = z.grey },
