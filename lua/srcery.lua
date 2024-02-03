@@ -240,6 +240,7 @@ local plugin_syntax = {
   ["@lsp.type.property"]     = { link = "@property" },
   ["@lsp.type.namespace"]     = { link = "@namespace" },
   ["@lsp.type.class"]     = { link = "@class" },
+  ["@lsp.type.macro"]     = { link = "Macro" },
 
   ["@lsp.type.property.lua"]     = { fg = z.bright_blue },
 
