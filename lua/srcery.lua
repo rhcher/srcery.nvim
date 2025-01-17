@@ -62,7 +62,7 @@ function z.terminal_color()
 end
 
 local syntax = {
-  Normal = { fg = z.bright_white, bg = z.none },
+  Normal = { fg = z.bright_white, bg = z.xgray1 },
   CursorLine = { bg = z.xgray2 },
   CursorColumn = { bg = z.xgray2 },
   Tabline = { fg = z.bright_black, bg = z.xgray2 },
@@ -71,7 +71,7 @@ local syntax = {
   MatchParen = { fg = z.bright_blue, bg = z.none, bold = true },
   ColorColumn = { fg = z.none, bg = z.xgray2 },
   Conceal = { fg = z.blue, bg = z.none },
-  CursorLineNr = { fg = z.yellow, bg = z.black },
+  CursorLineNr = { fg = z.yellow, bg = z.xgray2 },
   NonText = { fg = z.xgray4 },
   SpecialKey = { fg = z.blue },
   Visual = { fg = z.none, bg = z.xgray5 },
@@ -91,16 +91,16 @@ local syntax = {
   Question = { fg = z.orange, bg = z.none, bold = true },
   WarningMsg = { fg = z.red, bg = z.none },
   LineNr = { fg = z.bright_black },
-  SignColumn = { fg = z.none, bg = z.black },
-  Folded = { fg = z.bright_black, bg = z.black, italic = true },
-  FoldColumn = { fg = z.bright_black, bg = z.black },
+  Folded = { fg = z.none, bg = z.xgray2, italic = true },
+  SignColumn = { fg = z.none, bg = z.xgray1 },
+  FoldColumn = { fg = z.bright_black, bg = z.xgray1 },
   Cursor = { fg = z.black, bg = z.yellow },
   vCursor = { link = "Cursor" },
   iCursor = { link = "Cursor" },
   lCursor = { link = "Cursor" },
   -- CursorIM = { bg = z.none, reverse = true },
 
-  WinBar = { fg = z.orange},
+  WinBar = { fg = z.none, bg = z.xgray2},
 
   Special = { fg = z.orange },
   SpecialChar = { fg = z.yellow },
@@ -144,10 +144,10 @@ local syntax = {
   PmenuSbar = { fg = z.none, bg = z.xgray1 },
   PmenuThumb = { fg = z.none, bg = z.xgray6 },
 
-  DiffDelete = { fg = z.red, bg = z.black },
-  DiffAdd = { fg = z.green, bg = z.black },
-  DiffChange = { fg = z.green, bg = z.black },
-  DiffText = { fg = z.black, bg = z.green },
+  DiffDelete = { fg = z.red, bg = z.none },
+  DiffAdd = { fg = z.green, bg = z.none },
+  DiffChange = { fg = z.green, bg = z.none },
+  DiffText = { fg = z.black, bg = z.none },
 
   SpellCap = { fg = z.green, bg = z.none, bold = true, italic = true },
   SpellBad = { fg = z.none, bg = z.none, undercurl = true, sp = z.blue },
@@ -160,7 +160,7 @@ local syntax = {
 
   -- EndOfBuffer = { fg = z.bg, bg = z.none },
   -- Whitespace = { fg = z.base4 },
-  -- NormalFloat = { fg = z.base8, bg = z.bg_highlight },
+  NormalFloat = { fg = z.none, bg = z.xgray1 },
   -- QuickFixLine = { fg = z.violet, bold = true },
   -- Debug = { fg = z.orange },
   -- debugBreakpoint = { fg = z.bg, bg = z.red },
