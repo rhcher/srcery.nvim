@@ -241,6 +241,7 @@ local plugin_syntax = {
   ["@lsp.type.namespace"]     = { link = "@namespace" },
   ["@lsp.type.class"]     = { link = "@class" },
   ["@lsp.type.macro"]     = { link = "Macro" },
+  ["@lsp.type.TypeAlias"] = { link = "Type" },
 
   ["@lsp.type.property.lua"]     = { fg = z.bright_blue },
 
