@@ -563,6 +563,9 @@ local plugin_syntax = {
   LspStatic = { link = "Normal" },
   LspDeprecated = { strikethrough = true },
 
+  -- Snack
+  SnacksPickerMatch = { fg = z.orange, bold = true},
+
   -- Neogit
   -- NeogitDiffAddHighlight = { fg = z.green },
   -- NeogitDiffDeleteHighlight = { fg = z.red },
